@@ -20,6 +20,21 @@ body {
    margin: auto;
 }
 
+.btn {
+   text-decoration: none;
+   background: #fff;
+   color: #000;
+   margin-top: 1rem;
+   padding: 10px 30px;
+   display: inline-block;
+   border: none;
+   transition: opacity .4s ease-in;
+}
+
+.btn:hover {
+   opacity: 0.7;
+}
+
 /* Header */
 header {
    position: fixed;
@@ -68,7 +83,7 @@ header>h3 {
 
 .menu_wrap .hamburger>div {
    background: #fff;
-   position: absolute;
+   position: relative;
    width: 100%;
    height: 2.5px;
    display: flex;
@@ -93,7 +108,7 @@ header>h3 {
 }
 
 .menu_wrap .toggler:checked + .hamburger > div {
-   transform: rotate(225deg);
+   transform: rotate(135deg);
 }
 
 /* Trun lines into X */
@@ -125,7 +140,7 @@ header>h3 {
    background: rgba(24, 39, 51, .85);
    border-radius: 50%;
    width: 200vw;
-   height: 200vh;
+   height: 200vw;
    display: flex;
    flex: none;
    align-items: center;
@@ -171,4 +186,61 @@ header>h3 {
 
 .menu_wrap .menu>div>div>ul>li>a:hover {
    color: #558745;
+}
+
+
+/* showcase */
+.container {
+   max-width: 990px;
+   margin: auto;
+   overflow: hidden;
+   padding: 0 3rem;
+}
+
+.showcase {
+   position: relative;
+   width: 100%;
+   min-height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.showcase:before {
+   content: '';
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   height: 400px;
+   z-index: 1;
+   background: linear-gradient(to top, #111, transparent);
+}
+
+.showcase .showcase-inner {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   height: 100%;
+   z-index: 1;
+}
+
+.fitBg{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   opacity: 0.8;
+}
+.showcase h1 {
+   font-size: 4rem;
+}
+.showcase p {
+   font-size: 1.5rem;
+}
+.showcase a {
+   margin-top: 30px;
 }
