@@ -244,3 +244,38 @@ header>h3 {
 .showcase a {
    margin-top: 30px;
 }
+
+/* Section: Feel The Beauty */
+.feeling {
+   padding-top: 40px;
+   position: relative;
+   display: flex;
+   width: 100%;
+   justify-content: center;
+   align-items: center;
+}
+
+.feeling .box {
+   float: left;
+   width: 50%;
+   padding: 15px;
+   text-align: end;
+}
+
+.feeling .text > h1 {
+   text-transform: capitalize;
+   padding-bottom: 10px;
+   font-size: 30px;
+}
+
+.feeling .text > p {
+   font-size: 15px;
+}
+.feeling .text a {
+   float: right;
+   margin-top: 30px;
+}
+
+.feeling .img img {
+   height: 70vh;
+}
