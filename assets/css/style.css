@@ -311,3 +311,61 @@ header>h3 {
    height: 400px;
    background: linear-gradient(to bottom, #111, transparent);
 }
+
+/* Section: Most Popular */
+.most-popular {   
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   margin-top: 40px;
+   text-align: center;
+}
+
+.most-popular .title-text h1 {
+   font-weight: 600;
+   color: #fff;
+   font-size: 2em;
+   margin-bottom: 10px;
+}
+
+.most-popular .title-text p {
+   font-size: 15px;
+   margin-bottom: 20px;
+}
+
+.most-popular .image-text {
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 40px;
+}
+
+.most-popular .image-text .box {
+   position: relative;
+   min-width: 350px;
+   height: 480px;
+   background: #191919;
+   transition: 0.5s;
+   margin: 10px;
+}
+
+.most-popular .box img {
+   height: 65vh;
+   width: 100%;
+}
+
+.most-popular .image-text:hover .box {
+   opacity: .2;
+}
+
+.most-popular .image-text .box:hover {
+   opacity: 1;
+}
+
+.most-popular .box p {
+   font-size: 14px;
+   margin-bottom: 5px;
+}
