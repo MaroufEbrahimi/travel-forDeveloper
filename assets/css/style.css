@@ -406,3 +406,52 @@ footer h4 a {
 footer h4 a:hover {
    opacity: 1;
 }
+
+/* Media Queries */
+@media(max-width: 1100px) {
+   .feeling .box img {
+      height: 89vh;
+   }
+   .most-popular .image-text {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+   }
+}
+
+@media(max-width: 660px) {
+   .showcase h1, .showcase p,
+   .feeling .box, 
+   .most-popular .image-text .box, 
+   footer {
+      width: 100%;
+      text-align: center;
+   }
+
+   /* Showcase */
+   .showcase h1 {
+      font-size: 2rem;
+   }
+
+   .showcase p {
+      font-size: 1rem;
+   }
+
+   /* Feeling */
+   .feeling .a {
+      display: inline-block;
+   }
+
+   /* Most popular */
+   .most-popular .image-text {
+      display: block;
+   }
+
+   .most-popular .image-text .box {
+      width: 100%;
+   }
+
+   footer h4 {
+      margin: 30px;
+   }
+}
